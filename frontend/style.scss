@@ -1,0 +1,63 @@
+#root {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #ccc;
+
+
+    #menu-btn {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: 60px;
+        height: 60px;
+        background-color: #000;
+
+        &::before,
+        &::after {
+            content: "";
+
+            position: absolute;
+            right: 10px;
+
+            width: 40px;
+            height: 4px;
+
+            background-color: white;
+        }
+
+        //közös tulajdonságokat egybe leírjuk
+
+        &::before {
+            top: 20px;
+            transition: bottom 500ms, transform 500ms;
+        }
+
+        &::after {
+            top: 36px;
+            transition: top 500ms, transform 500ms;
+        }
+
+        //azokat az egyéni tulajdonságokat amik egyediek pedig külön írjuk le
+        
+        // háttérszín választó, klikk és változik a megadott színre és a további megadott tulajdonságokat is változtatja       
+    } //az összes a menu-btn-re vonatkozik
+    &.menu-opened {
+        background-color: #fff;
+        
+        #menu-btn{
+            background-color: #3a3a39;
+        
+            &::before {
+                top: 28px;
+                transform: rotate(45deg);
+            }
+        
+            &::after {
+                top: 28px;
+                transform: rotate(-45deg);
+            }//azokat az egyéni tulajdonságokat amik egyediek pedig külön írjuk le
+        }
+    }
+
+}
