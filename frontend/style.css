@@ -10,6 +10,7 @@
   right: 0px;
   width: 60px;
   height: 60px;
+  z-index: 100;
   background-color: #000;
 }
 
@@ -56,5 +57,43 @@
   top: 28px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+#root.menu-opened #navigation {
+  right: 0px;
+  position: fixed;
+  padding: 40px;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 99;
+  background-color: #000;
+  color: #fff;
+  opacity: 100%;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  padding: 40px;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  z-index: 99;
+  background-color: #000;
+  color: #fff;
+  opacity: 0;
+}
+
+nav a {
+  display: block;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
