@@ -59,19 +59,8 @@
           transform: rotate(-45deg);
 }
 
-#root.menu-opened #navigation {
+#root.menu-opened nav {
   right: 0px;
-  position: fixed;
-  padding: 40px;
-  top: 0;
-  width: 300px;
-  height: 100vh;
-  z-index: 99;
-  background-color: #000;
-  color: #fff;
-  opacity: 100%;
-  -webkit-transition: 800ms;
-  transition: 800ms;
 }
 
 section {
@@ -83,13 +72,14 @@ nav {
   position: fixed;
   padding: 40px;
   top: 0;
-  right: 0;
+  right: -300px;
   width: 300px;
   height: 100vh;
   z-index: 99;
   background-color: #000;
   color: #fff;
-  opacity: 0;
+  -webkit-transition: 800ms;
+  transition: 800ms;
 }
 
 nav a {

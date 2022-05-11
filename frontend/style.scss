@@ -61,8 +61,8 @@
         }
         nav{
             right: 0px;
-            opacity: 100%;
-            transition: 800ms;
+            //opacity: 100%;
+            
         }
     }
 
@@ -77,7 +77,7 @@ nav{
     position: fixed;
     padding: 40px;
     top: 0;
-    right: 0; //alapértelmezetten -300px, click class nevet megkapja és animálódjon innentől 0px
+    right: -300px; //alapértelmezetten -300px, click class nevet megkapja és animálódjon innentől 0px
 
     width: 300px;
     height: 100vh;
@@ -85,7 +85,8 @@ nav{
 
     background-color: #000;
     color: #fff;
-    opacity: 0;
+    //opacity: 0;
+    transition: 800ms;
 
     a{
         display: block;
