@@ -1,6 +1,6 @@
 const beerNavComponent = function (inner){
     return `
-        <nav id="navigation">${inner}</nav>
+        <nav>${inner}</nav>
     `
 }
 
